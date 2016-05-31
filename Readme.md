@@ -41,8 +41,8 @@ Merge/Estimate etc. are done for P=14.
 
 ## Other implementations (in no particular order)
 
-* [HLL++ by Micha Gorelick \@mynameisfiber](https://github.com/mynameisfiber/gohll)
-* [Probably (has regular HLL) by Dustin Sallings \@dustin](https://github.com/dustin/go-probably)
+* [HLL++ by Micha Gorelick @mynameisfiber](https://github.com/mynameisfiber/gohll)
+* [Probably (has regular HLL) by Dustin Sallings @dustin](https://github.com/dustin/go-probably)
 * [HLL++ by lytrics](https://github.com/lytics/hll)
-* [HLL/HLL++ by Clark DuVall \@clarkduvall](https://github.com/clarkduvall/hyperloglog)
+* [HLL/HLL++ by Clark DuVall @clarkduvall](https://github.com/clarkduvall/hyperloglog)
 * [Redis has regular HLL](http://download.redis.io/redis-stable/src/hyperloglog.c). Also see [blogpost](http://antirez.com/news/75).
