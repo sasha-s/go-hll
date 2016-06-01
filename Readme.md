@@ -46,10 +46,10 @@ log.Println(h.EstimateCardinality())
 
 Use good hash (otherwise accuracy would be poor). Some options:
 
-* [Murmur3](https://github.com/spaolacci/murmur3)
-* [Highway](https://github.com/dgryski/go-highway)
+* [MurmurHash3](https://github.com/spaolacci/murmur3)
+* [HighwayHash](https://github.com/dgryski/go-highway)
 * [Siphash](https://github.com/dchest/siphash)
-* [Spooky] (https://github.com/dgryski/go-spooky)
+* [SpookyHash](https://github.com/dgryski/go-spooky)
 
 ## Speed
 
