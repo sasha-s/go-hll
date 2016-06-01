@@ -7,7 +7,7 @@ See [HyperLogLog in Practice](http://research.google.com/pubs/pub40671.html) pap
 
 ## Ø-serialization
 There is no need to serialize/deserialize hll.
-Everything is stored in a byte slice, which can be memory mapped, passed around over th network as is etc.
+Everything is stored in a byte slice, which can be memory mapped, passed around over the network as is etc.
 
 ## Differences from the paper:
 * sparse representation. this implementation does exact counting for small sets.
