@@ -2,9 +2,8 @@ package hll
 
 import (
 	"log"
+	"math/rand"
 	"testing"
-
-	"github.com/ScaledInference/si-srv/rng"
 )
 
 func TestVerifyDense(t *testing.T) {
@@ -62,7 +61,7 @@ func TestGetSet(t *testing.T) {
 		}
 		h := make(Dense, s)
 		for i := 0; i < 100000; i++ {
-			r := byte(rng.Get() & 63)
+			r := byte(rand.Intn(256) & 63)
 			idx := i % max
 			h.set(idx, r)
 			if h.get(idx) != r {
