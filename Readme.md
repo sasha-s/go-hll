@@ -53,7 +53,8 @@ Use good hash (otherwise accuracy would be poor). Some options:
 
 ## Speed
 
-Benchmark results on my laptop (to give an )
+Benchmark results on my MacBook Pro (Mid 2014).
+
 ```
 Add-8            9.68ns ± 1%
 Estimate-8       27.3µs ± 1%
