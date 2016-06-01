@@ -1,4 +1,5 @@
-# HyperLogLog in golang
+# HyperLogLog in golang.
+[Docs](https://godoc.org/github.com/sasha-s/go-hll).
 
 ## What
 A go implementation of HypeLogLog data structure with a twist.
@@ -10,7 +11,7 @@ Everything is stored in a byte slice, which can be memory mapped, passed around 
 
 ## Differences from the paper:
 * sparse representation. this implementation does exact counting for small sets.
-* no compression. HLL of a given precision P uses fixed (8 + 3*2^(P-2), 8 byte header + 6 bits per register) size in bytes.
+* fixed memory usage (even for empty HLL). HLL of a given precision P uses fixed (8 + 3*2^(P-2), 8 byte header + 6 bits per register) size in bytes.
 
 ## Why
 I wanted an HLL implementation that is
@@ -21,6 +22,33 @@ I wanted an HLL implementation that is
 * exact when number of unique elements is small
 * memory-mapped file friendly
 * well tested (90+% coverage)
+
+## Usage
+Get go-hll:
+```sh
+go get github.com/sasha-s/go-hll
+```
+
+Use it:
+```go
+s, err := SizeByP(16)
+if err != nil {
+	log.Panicln(err)
+}
+h := make(HLL, s)
+...
+for _, x := range []string{"alpha", "beta"} {
+	h.Add(siphash.Hash(2, 57, []byte(x)))
+}
+log.Println(h.EstimateCardinality())
+```
+
+Use good hash (otherwise accuracy would be poor). Some options:
+
+* [Murmur3](https://github.com/spaolacci/murmur3)
+* [Highway](https://github.com/dgryski/go-highway)
+* [Siphash](https://github.com/dchest/siphash)
+* [Spooky] (https://github.com/dgryski/go-spooky)
 
 ## Speed
 
