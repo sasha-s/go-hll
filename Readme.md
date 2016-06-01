@@ -12,7 +12,7 @@ Everything is stored in a byte slice, which can be memory mapped, passed around 
 ## Differences from the paper:
 * sparse representation. this implementation does exact counting for small sets.
 * fixed memory usage (even for empty HLL). HLL of a given precision P uses fixed (8 + 3*2^(P-2), 8 byte header + 6 bits per register) size in bytes.
-* thresholds are tuned are different from [Sub-Algorithm Threshold](https://docs.google.com/document/d/1gyjfMHy43U9OWBXxfaeG-3MjGzejW1dlpyMwEYAAWEI/view?fullscreen#heading=h.nd379k1fxnux).
+* thresholds are tuned. different from [Sub-Algorithm Threshold](https://docs.google.com/document/d/1gyjfMHy43U9OWBXxfaeG-3MjGzejW1dlpyMwEYAAWEI/view?fullscreen#heading=h.nd379k1fxnux).
 
 ## Why
 I wanted an HLL implementation that is
