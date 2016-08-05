@@ -76,3 +76,4 @@ Merge/Estimate etc. are done for P=14.
 * [HLL++ by lytrics](https://github.com/lytics/hll)
 * [HLL/HLL++ by Clark DuVall @clarkduvall](https://github.com/clarkduvall/hyperloglog)
 * [Redis has regular HLL](http://download.redis.io/redis-stable/src/hyperloglog.c). Also see [blogpost](http://antirez.com/news/75).
+* [hllpp by Muir Manders @muirrn/retailnext](https://github.com/retailnext/hllpp)
