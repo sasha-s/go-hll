@@ -224,7 +224,7 @@ func (h Dense) EstimateCardinality() uint64 {
 		if v2 == 0 {
 			V++
 		}
-		if v2 == 0 {
+		if v3 == 0 {
 			V++
 		}
 	}

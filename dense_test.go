@@ -14,7 +14,7 @@ func TestVerifyDense(t *testing.T) {
 		}
 		h := make(Dense, s)
 		if h.IsValid() != nil {
-			t.Fatal(h.IsValid)
+			t.Fatal(h.IsValid())
 		}
 
 	}
