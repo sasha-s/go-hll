@@ -1,7 +1,5 @@
 # HyperLogLog in golang.
-[Docs](https://godoc.org/github.com/sasha-s/go-hll).
-
-# Online deadlock detection in go (golang). [Docs](https://godoc.org/github.com/sasha-s/go-deadlock). [![Build Status](https://travis-ci.org/sasha-s/go-hll.svg?branch=master)](https://travis-ci.org/sasha-s/go-hll) [![codecov](https://codecov.io/gh/sasha-s/go-hll/branch/master/graph/badge.svg)](https://codecov.io/gh/sasha-s/go-hll)
+[Docs](https://godoc.org/github.com/sasha-s/go-hll) [![Build Status](https://travis-ci.org/sasha-s/go-hll.svg?branch=master)](https://travis-ci.org/sasha-s/go-hll) [![codecov](https://codecov.io/gh/sasha-s/go-hll/branch/master/graph/badge.svg)](https://codecov.io/gh/sasha-s/go-hll)
 ## What
 A go implementation of HypeLogLog data structure with a twist.
 See [HyperLogLog in Practice](http://research.google.com/pubs/pub40671.html) paper by Stefan Heule, Marc Nunkesser, Alex Hall.
