@@ -231,6 +231,20 @@ func TestMergeSparseSparse(t *testing.T) {
 	}
 }
 
+func TestSizeByErrorErrorTooSmall(t *testing.T) {
+	_, err := SizeByError(0.00001)
+	if err == nil {
+		t.Fatal("expected an error")
+	}
+}
+
+func TestSizeByErrorErrorTooLarge(t *testing.T) {
+	_, err := SizeByError(0.3)
+	if err == nil {
+		t.Fatal("expected an error")
+	}
+}
+
 func TestMergeMismatchingSizes(t *testing.T) {
 	s, err := SizeByError(0.001)
 	if err != nil {
